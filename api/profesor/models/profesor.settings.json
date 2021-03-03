@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profesors",
+  "info": {
+    "name": "Profesor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "dni": {
+      "type": "biginteger"
+    },
+    "curso": {
+      "via": "profesor",
+      "model": "cursos"
+    }
+  }
+}

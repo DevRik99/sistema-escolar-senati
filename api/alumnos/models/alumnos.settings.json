@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alumnos",
+  "info": {
+    "name": "alumnos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombres": {
+      "type": "string"
+    },
+    "apellidos": {
+      "type": "string"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    },
+    "dni": {
+      "type": "biginteger"
+    },
+    "codigo": {
+      "type": "biginteger"
+    },
+    "fecha_registro": {
+      "type": "datetime"
+    },
+    "cursos": {
+      "via": "alumnos",
+      "collection": "cursos",
+      "dominant": true
+    }
+  }
+}

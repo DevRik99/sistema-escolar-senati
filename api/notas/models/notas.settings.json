@@ -1,0 +1,13 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notas",
+  "info": {
+    "name": "notas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {}
+}
